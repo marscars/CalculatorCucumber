@@ -12,6 +12,6 @@ node {
 
     stage ('Cucumber testing') {
         checkout scm
-        sh 'mvn test'
+        sh 'mvn -D test=CucumberTest test'
     }
 }
